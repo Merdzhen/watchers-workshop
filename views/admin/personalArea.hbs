@@ -1,0 +1,38 @@
+<div class="container-personalArea" style="flex: 1 1 auto;">
+  <h3 style="color: #ee247c; margin-bottom: 30px;">Личный кабинет</h3>
+  <div>
+    <button style="margin-bottom: 10px;r">
+      <a href="/personalArea/downloadProducts" style="text-decoration: none;">Скачать список всех товаров</a>
+    </button>
+    <button style="display: block; margin-bottom: 30px;">
+      <a href="/personalArea/download" style="text-decoration: none;">Скачать информацию о клиентах</a>
+    </button>
+  </div>
+  <div class=" container-orders">
+    <h3 style="color: #ee247c;">Заказы</h3>
+    <table border="1">
+      <tr style="text-align: center;">
+        <th>ID</th>
+        <th>Имя</th>
+        <th>Тел</th>
+        <th>Сообщение</th>
+        <th>Почта</th>
+        <th>Эскиз</th>
+      </tr>
+      {{#each clients}}
+      <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.phone}}</td>
+        <td>{{this.message}}</td>
+        <td>{{this.email}}</td>
+        <td>
+          {{#each this.dataValues.Pictures}}
+          <img src="{{this.img}}" alt="order">
+          {{/each}}
+        </td>
+      </tr>
+      {{/each }}
+    </table>
+  </div>
+</div>

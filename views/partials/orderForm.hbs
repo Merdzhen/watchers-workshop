@@ -1,0 +1,31 @@
+<div id="orderForm" class="container">
+  <div class="container-order-form">
+    <h3 class="title-order-form">Пожалуйста заполните форму чтобы сделать заказ</h3>
+    <form enctype="multipart/form-data">
+      <div>
+        <label for="name-on-order-form"></label>
+        <input class="name field" id="name-on-order-form" placeholder="Введите имя" type="text">
+      </div>
+      <div>
+        <label for="email-on-order-form"></label>
+        <input class="email field" id="email-on-order-form" placeholder="Введите email" type="email">
+      </div>
+      <div>
+        <label for="phone-on-order-form"></label>
+        <input class="phone field" id="phone-on-order-form" placeholder="Введите телефон" type="tel">
+      </div>
+      <div>
+        <label for="message-on-order-form"></label>
+        <textarea class="message field" id="message-on-order-form"
+          placeholder="Здесь можно написать какой товар понравился и оставить комментарий"></textarea>
+      </div>
+      <div>
+        <label for="file-upload"></label>
+        <input name="img" id="file-upload" type="file" multiple>
+      </div>
+      <div class="success-or-failure">
+      </div>
+      <button id="btn-order-form" class="btn" type="submit" style="width: 250px;">Отправить заказ</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.bg-ex-parallax {
+  background: url(/img/par1.jpg);
+  /* Путь к картинке */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat Alternates', sans-serif;
+  /* margin-top: 3rem; */
+}
+
+.bg-ex-parallax span {
+  color: aliceblue;
+  font-size: 100px;
+  text-align: center;
+}
+
+.bg-ex-parallax .parallax-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* Прозрачность */
+  z-index: 2;
+}
+
+.bg-ex-parallax span {
+  z-index: 3;
+}
+
+.parallax-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+/* _____________________________ Навигация header ________________________________ */
+
+.logo_text_container {
+  display: flex;
+  text-decoration: none;
+  color: #ee247c;
+}
+
+.logo_text_container:hover {
+  color: #ee247c;
+}
+
+.logoText {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.logoText:hover {
+  color: #ee247c;
+}
+
+#nav_buttons:hover {
+  transform: scale(1.2);
+}
+
+.adminPanel {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+/* _____________________________ Слайдер ________________________________ */
+
+.slider {
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+#carouselExampleCaptions {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.carousel-inner {
+  height: 100% !important;
+}
+
+.carousel-item {
+  height: 100% !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.carousel-item img {
+  object-fit: cover !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* _________________________ Кнопки Заказать на карусели ________________________________ */
+
+.border-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 0px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  right: 40%;
+  left: 40%;
+  top: 86vh;
+  text-align: center;
+}
+
+.border-button:before,
+.border-button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+.border-button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.border-button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.border-button:hover:before,
+.border-button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.border-button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.border-button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.border-button:hover {
+  background: rgba(255, 255, 255, .2);
+  color: rgb(255, 255, 255);
+}
+
+/* __________________________________ Карточки товаров _____________________________________ */
+
+#cards-and-name {
+  padding-top: 105px;
+  margin-top: -70px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#cards-and-name h3 {
+  margin-bottom: 2rem;
+  color: #ee247c;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  width: 300px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px 10px 30px 10px;
+  margin-bottom: 4%;
+  transition: box-shadow .3s;
+  -webkit-box-shadow: 0px 5px 30px -10px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 30px -10px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 30px -10px rgba(34, 60, 80, 0.2);
+}
+
+.card:hover {
+  /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); */
+  -webkit-box-shadow: 0px 4px 26px 23px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 4px 26px 23px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 4px 26px 23px rgba(34, 60, 80, 0.2);
+}
+
+/* _____________________________ Факты (достижения) _____________________________ */
+
+#cool-facts {
+  height: 400px;
+  background: url(/img/2.jpg);
+  /* Путь к картинке */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin-top: 2%;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+.cool-facts-overlay {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section h3,
+h4 {
+  color: white;
+  z-index: 5;
+  font-size: 3rem;
+}
+
+.section h3 {
+  font-size: 4rem;
+  color: #ee247c;
+}
+
+.fact-count {
+  margin-top: 5%;
+  color: white;
+  z-index: 5;
+}
+
+.facts-item img {
+  width: 40%;
+  filter: invert(100%);
+}
+
+/* __________________________________ О Нас _____________________________________ */
+
+#aboutus {
+  padding-top: 75px;
+  margin-top: -70px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+  text-align: center;
+}
+
+#aboutus h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ee247c;
+}
+
+#aboutus h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#aboutus p {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* _______________________________________________________________________ */
+
+.title-order-form {
+  margin: 20px;
+  color: #ee247c;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+#orderForm {
+  padding-top: 60px;
+  margin-top: -70px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+  margin-top: -70px;
+  margin: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+}
+
+.container-order-form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-order-form div .field {
+  border-radius: 3px;
+  border: none;
+  margin: 10px;
+  width: 500px;
+  height: 40px;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.container-order-form div .message {
+  width: 600px;
+  height: 300px;
+  resize: none;
+}
+
+.container-order-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-order-form form .btn {
+  margin: 10px;
+  font-size: 1.1rem;
+  width: 200px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  background-color: #ee247c;
+  outline: none;
+  border: none;
+}
+
+/* ____________________________________Footer_________________________________________ */
+
+footer {
+  height: 4rem;
+  background-color: #ee247c;
+  -webkit-box-shadow: 0px -5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px -5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px -5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+#foot {
+  width: inherit;
+  height: inherit;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ________________________________ Socials icons _______________________________ */
+
+.fa {
+  padding: 7px;
+  font-size: 20px;
+  width: 45px;
+  text-align: center;
+  margin: 5px 2px;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+/* _____________________________________________________________________________ */
+
+h1 {
+  margin-bottom: 125px !important;
+  font-size: 4.5em;
+  font-weight: 200;
+  margin: 0.4em 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container-order-form div #file-upload {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+}
+
+.alert-successfully {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+
+.alert-failure {
+  padding: 15px;
+  border: 1px solid #e9cdc6;
+  border-radius: 4px;
+  color: #76433c;
+  background-color: #f0dcd8;
+}
+
+
+.js-hidden {
+  display: none;
+}
+
+.err {
+  color: red;
+}
+
+/* _______________________________ стили для кабинета Админа ___________________________ */
+
+.container-personalArea {
+  margin: 100px;
+}
+
+.container-orders {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+}
+
+.orders {
+  flex-direction: column;
+  display: flex
+}
+
+.order-info {
+  margin: 10px;
+  font-size: 24px;
+}
+
+table tr th,
+table tr td {
+  padding: 10px;
+  border: 1px groove black;
+
+}
+
+table tr td img {
+  width: auto;
+  height: 60px;
+}
+
+/* _____________________________ Медиа-запросы ____________________________ */
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+
+  .adminPanel {
+    width: 17%;
+  }
+
+  #mainButtons {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+  #navbar {
+    justify-content: space-around;
+  }
+
+  #allFooter {
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  .adminPanel {
+    width: 20%;
+  }
+
+  #logo {
+    width: 60px;
+    height: 55px;
+  }
+
+  .logoText {
+    font-size: 30px;
+  }
+
+  #nav_buttons {
+    padding: 0;
+    width: 165px;
+    margin-right: 20px;
+  }
+
+  #mainButtons {
+    font-size: large !important;
+    width: 45% !important;
+    text-align: start !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+
+  #navbar {
+    justify-content: space-around;
+  }
+
+  #allFooter {
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  .adminPanel {
+    width: 20%;
+    flex-direction: column;
+  }
+
+  .adminPanel div {
+    padding: 0;
+  }
+
+  #adminHello {
+    padding: 0;
+  }
+
+  #logo {
+    width: 50px;
+    height: 45px;
+  }
+
+  .logoText {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  #nav_buttons {
+    padding: 0;
+    width: 165px;
+    margin-right: 20px;
+  }
+
+  #mainButtons {
+    font-size: large !important;
+    width: 45% !important;
+    text-align: start !important;
+    flex-direction: column;
+  }
+}
+
+/* .facts-item img {
+  width: 20%;
+}
+
+.fact-count h3 {
+  font-size: 2rem;
+}
+
+.fact-count h4 {
+  font-size: 1rem;
+} */
+
+@media (min-width: 580px) and (max-width: 1000px) {
+
+  .facts-item img {
+    width: 20%;
+  }
+
+  .fact-count h3 {
+    font-size: 2rem;
+  }
+
+  .fact-count h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 579px) {
+  .facts-item img {
+    width: 10%;
+  }
+
+  .fact-count h3 {
+    font-size: 2rem;
+  }
+
+  .fact-count h4 {
+    font-size: 1rem;
+  }
+}

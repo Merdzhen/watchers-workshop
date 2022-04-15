@@ -1,0 +1,32 @@
+<div class="main" style="flex: 1 1 auto; display: flex; align-items: center; justify-content: center;">
+  <div class="container-order-form" style="margin-left: 15px; width: 50%">
+    <h3>Добавить новую модель</h3>
+    <div class="form-wrapper" role="main" style="flex: 1 1 auto;">
+      <form name="newcard" method="post" action="/products/newcard" enctype="multipart/form-data"
+        style="justify-content: center; align-items: flex-start;">
+        <div class="product_title" style="margin: 20px;">
+          <label for="product_title_input">Наименование модели:</label>
+          <input id="product_title_input" name="title" type="text" style="margin-left: 15px">
+        </div>
+
+        <div class=" product_description" style="margin: 20px;">
+          <label for="product_description_input">Описание модели:</label>
+          <input id="product_description_input" name="description" type="text" style="margin-left: 15px">
+        </div>
+
+        <div class=" product_price" style="margin: 20px;">
+          <label for="product__input">Стоимость:</label>
+          <input id="product_price_input" name="price" type="integer" style="margin-left: 15px">
+        </div>
+
+        <div class="product_img" style="margin: 20px;">
+          <label for="product_img">Изображение модели:</label>
+          <label for="file-update" style="margin-left: 15px"></label>
+          <input id="file-update" type="file" name="img" id="img" {{!-- multiple --}}>
+        </div>
+
+        <input type="submit" value="Добавить модель" class="button" style="margin-left: 20px;     align-self: center;">
+      </form>
+    </div>
+  </div>
+</div>

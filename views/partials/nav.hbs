@@ -1,0 +1,29 @@
+<nav id="navbar" class="navbar navbar-light bg-light fixed-top p-0" style="height: 9vh;">
+  <div id="allFooter" class="container">
+    <a class="logo_text_container" class="navbar-brand" href="/">
+      <img id="logo" src="/img/logo.png" alt="" width="70" height="65" class="d-inline-block align-text-top">
+      <div class="logoText">Watchers</div>
+    </a>
+    {{#if admin}}
+    <div class="adminPanel">
+      <div class="nav-link col" style="text-align: center;"><a href="/personalArea"
+          style="text-decoration: none;">Привет, {{admin}}!</a></div>
+      <a id="adminHello" class="nav-link col" style="text-align: center;" href="/logout">
+        <div>Выйти</div>
+      </a>
+    </div>
+    {{/if}}
+    <div id="mainButtons" class="row align-items-center" style="width: 47%; text-align: center; font-size: x-large;">
+      <a id="nav_buttons" class="nav-link col" href="/#cards-and-name" style="color: #ee247c;">
+        <div style="width: 250px;">Примеры работ</div>
+      </a>
+      <a id="nav_buttons" class="nav-link col" href="/#aboutus" style="color: #ee247c;">
+        <div>О нас</div>
+      </a>
+      <a id="nav_buttons" class="nav-link col" href="/#orderForm" style="color: #ee247c;">
+        <div>Заказать</div>
+      </a>
+    </div>
+  </div>
+  </div>
+</nav>

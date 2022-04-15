@@ -1,0 +1,25 @@
+<script defer src="/js/register.js"></script>
+
+<div class="adminRegister"
+  style="flex: 1 1 auto; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+  <h3 style="align-self: center; color: #ee247c;">Зарегистрируйте нового администратора</h3>
+
+  <form class="js-register" style="display: flex; flex-direction: column; margin: 10px;">
+    {{!-- <form method="POST" action="/register" style="margin-top: 100px;"> --}}
+      <input name="inputName" placeholder="Введите имя" type="text" minlength="2" style="margin: 5px;">
+      <input name="inputMail" placeholder="Введите E-mail" type="email" style="margin: 5px;">
+      <input name="inputPass" placeholder="Введите пароль" type="password" minlength="6" style="margin: 5px;">
+      <button type="submit" style="margin: 5px;">Зарегистрироваться</button>
+      <p class="js-hidden err js-reg-err">Заполните все поля</p>
+      <p class="js-hidden js-reg-answer">Ваша заявка на получение прав администратора принята</p>
+    </form>
+
+    <p>Уже имеется аккаунт администратора?</p>
+    <h3 style="align-self: center; color: #ee247c;">Авторизуйтесь</h3>
+    {{!-- <form class="js-login"> --}}
+      <form method="POST" action="/login" style="display: flex; flex-direction: column; margin: 10px;">
+        <input name="inputMail" placeholder="Введите E-mail" type="email" style="margin: 5px;">
+        <input name="inputPass" placeholder="Введите пароль" type="password" minlength="6" style="margin: 5px;">
+        <button type="submit" style="margin: 5px;">Войти</button>
+      </form>
+</div>
