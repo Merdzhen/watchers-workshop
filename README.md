@@ -5,4 +5,4 @@ The workshop Watchers make handmade watches. All watches are made individually f
 
 For administrators we created secret page via link '/admin'. Here new admin can make a request to become administrator, but can not login without approve. To give approve to new administrator, our superAdmin :) can change 'approved' column to 'true' value in the database, 'Admins' table.
 
-Admin can edit cards with examples of watches, delete or create new card. In admin's page admin can see the list of requests from users, and he/she can also download the list of watch examples and the list of clients' contacts in CSV format.
+Admin can edit cards with examples of watches, delete or create new card. In admin's page admin can see the list of requests from users, and can also download the list of watch examples and the list of clients' contacts in CSV format.
