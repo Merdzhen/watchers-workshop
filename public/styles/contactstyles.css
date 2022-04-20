@@ -1,0 +1,47 @@
+.map {
+  width: 800px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* скрывает надписи внизу карты */
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+/* черно-белая карта */
+/* [class*="ground-pane"] {
+  filter: grayscale(1);
+} */
+
+.balloon_address {
+  color: #ee247c;
+}
+
+.balloon a {
+  color: #5f0029;
+}
+
+/* кнопка закрыть */
+/* [class*="balloon_close-button"] {
+  opacity: 1;
+} */
+
+.contacts {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ee247c;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-text {
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}

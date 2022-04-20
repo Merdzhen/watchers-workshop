@@ -4,7 +4,7 @@ const async = require('hbs/lib/async');
 const { Admin, Product } = require('../db/models');
 const multer = require('../middleware/multer.middleware');
 
-adminRouter.get('/login', async (req, res) => {
+adminRouter.get('/login', (req, res) => {
   res.render('admin/login');
 });
 
