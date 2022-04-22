@@ -1,13 +1,13 @@
-const center = [36.902203430580876, 30.716856361340255];
+const point = [36.902203430580876, 30.716856361340255];
 
 function init() {
-  const map = new ymaps.Map('map-test', {
-    center,
+  const map = new ymaps.Map('map', {
+    center: point,
     zoom: 13,
   });
 
   // добавление метки
-  const placemark = new ymaps.Placemark(center, {
+  const placemark = new ymaps.Placemark(point, {
     balloonContentHeader: 'Хедер балуна',
     balloonContentBody: 'Body балуна',
     balloonContentFooter: 'Подвал',
@@ -18,7 +18,7 @@ function init() {
     // iconImageOffset: [0, 0],
   });
 
-  const placemark1 = new ymaps.Placemark(center, {
+  const placemark1 = new ymaps.Placemark(point, {
     balloonContent: `
     <div class="balloon">
       <div class="balloon_address">Watchers shop</div>
