@@ -1,9 +1,10 @@
 # WATCHERS workshop
 This is a one-page website for a watch workshop. We made it together with three of my colleagues during internship in Elbrus bootcamp. All git history you can find in the original repository https://github.com/IElizaI/project-from-the-client
 
+---
 ### 🖥 Stack:
 Node.js, Express, Handlebars, PostgreSQL, Sequelize, Bootstrap, Yandex maps API, Bcrypt, express-session, Nodemailer, Multer
-
+---
 
 The workshop Watchers make handmade watches. All watches are made individually for each client. 
 <img alt="main-page" src="./images-readme/main-page1.png" />
@@ -15,7 +16,7 @@ Clients can also attach photo or sketches for master in their request.
 <img alt="main-page" src="./images-readme/main-page4-request-form.png" />
 After receiving new request the website sends email to the client with notification that the request has been received.
 
-There is also a map with shop's location and conctacts on the main page (created usind Yandex maps API):
+There is also a map with shop's location and conctacts on the main page (created using Yandex maps API):
 <img alt="main-page" src="./images-readme/main-page5-map.png" />
 
 For administrators we created secret page via link '/admin'. Here new admin can make a request to become administrator, but can not login without approve. To give approve to new administrator, our superAdmin :) can change 'approved' column to 'true' value in the database, 'Admins' table.
