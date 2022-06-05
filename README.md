@@ -4,6 +4,15 @@ Node.js, Express, Handlebars, PostgreSQL, Sequelize, Bootstrap, Yandex maps API,
 
 ---
 
+My responsibilities:
+- login, registration (Bcrypt, PostgreSQL, Sequelize, express-sessions)
+- email to clients after publishing request (Nodemailer)
+- cards with watch models + buttons for administrator for editing/deleting items
+- deleting one card
+- shop location on the map (Yandex maps API)
+
+---
+
 This is a one-page website for a watch workshop. We made it together with three of my colleagues during internship in Elbrus bootcamp. All git history you can find in the original repository https://github.com/IElizaI/project-from-the-client
 
 The workshop Watchers make handmade watches. All watches are made individually for each client. 
@@ -27,11 +36,3 @@ Admin can edit cards with examples of watches, delete or create new card.
 <img alt="main page for admin" src="./images-readme/admin-edit.png" />
 In admin's private page admin can see the list of requests from users, and can also download the list of watch examples and the list of clients' contacts in CSV format.
 <img alt="admin page" src="./images-readme/admin.png" />
-
-My responsibilities:
-- login, registration (Bcrypt, PostgreSQL, Sequelize, express-sessions)
-- email to clients after publishing request (Nodemailer)
-- cards with watch models + buttons for administrator for editing/deleting items
-- deleting one card
-- shop location on the map (Yandex maps API)
-
