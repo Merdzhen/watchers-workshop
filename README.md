@@ -15,6 +15,8 @@ My responsibilities:
 
 This is a one-page website for a watch workshop. We made it together with three of my colleagues during internship in Elbrus bootcamp. All git history you can find in the original repository https://github.com/IElizaI/project-from-the-client
 
+Current version is deployed **[here](https://wristwatches.herokuapp.com)** 
+
 The workshop Watchers make handmade watches. All watches are made individually for each client. 
 <img alt="main page" src="./images-readme/main-page1.png" />
 <img alt="main page - examples" src="./images-readme/main-page2-examples.png" />
